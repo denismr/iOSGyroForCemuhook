@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gyro Client</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <p>Version: 1</p>
+    <p><label id="lblConnected"></label></p>
+    <script>
+      let bar = window.location.href;
+      let wsAddress = `ws://${bar.match(/^https?:\/\/([^:]+).+$/)[1]}:1337`;
+      console.log(wsAddress);
+      var ws = new WebSocket(wsAddress);
+
+      let scale = 960;
+
+      ws.onopen = function(ws_evnt) {
+        window.document.getElementById("lblConnected").textContent = "Connected";
+        
+        window.ondevicemotion = function(motion) {
+          let data = {
+            ts: Date.now(),
+            gyro: {
+              x: scale * motion.rotationRate.alpha,
+              z: scale * motion.rotationRate.beta,
+              y: -scale * motion.rotationRate.gamma,
+            },
+          }
+          ws.send(JSON.stringify(data, function(key, val) {
+            return val.toFixed ? Number(val.toFixed(20)) : val;
+          }));
+        };
+      };
+    </script>
+  </body>
+</html>
