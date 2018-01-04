@@ -58,6 +58,8 @@ Note that you may change the port, if you have changed it in the app.js file.
 
 Finally, launch a web browser in your iPhone/iPad and navigate to the `<computer's_ip_address>:8080` (or `:<port>` with whatever port you have configured). If you locked the screen / closed the browser or, for any other reason, disconnected from the server, just refresh the page to reconnect (on Chrome, you can refresh by just pulling the page down until the refresh icon appears at the top of the screen).
 
+I *strongly adivse* you to lock the rotation to portrait mode in the iPhone.
+
 If you are tuning the scale factor in the `static.html`, I'd recommend opening the page with a private tab. Sice private tabs do not cache, every time you reload you are garanteed to view the most current version.
 
 Enjoy.
