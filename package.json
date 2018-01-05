@@ -1,0 +1,31 @@
+{
+  "name": "ios-gyro-for-cemuhook",
+  "version": "1.0.0",
+  "description": "Use an iPhone's/iPad's and even Android's GYROS in CEMU (with cemuhook) without jailbreak and without installing any software in the phone.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denismr/iOSGyroForCemuhook.git"
+  },
+  "keywords": [
+    "ios",
+    "gyro",
+    "cemuhook",
+    "cemu",
+    "websocket"
+  ],
+  "author": "Denis M. R. (https://github.com/denismr)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/denismr/iOSGyroForCemuhook/issues"
+  },
+  "homepage": "https://github.com/denismr/iOSGyroForCemuhook#readme",
+  "dependencies": {
+    "crc": "^3.5.0",
+    "long": "^3.2.0",
+    "ws": "^4.0.0"
+  }
+}
