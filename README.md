@@ -25,15 +25,13 @@ Clone this repository into anyware in your computer (avoid Programs Files due to
 Download the required node packages with the following commands (ignore the warnings):
 
 ```sh
-npm install crc
-npm install ws
-npm install long
+npm install
 ```
 
 Finally, run the server with:
 
 ```sh
-node app.js
+npm start
 ```
 
 The app.js file implements three servers:
