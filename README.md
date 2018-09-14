@@ -1,5 +1,13 @@
 # iOS GYRO for Cemuhook
 
+## ALERT
+
+Apparently, this project does not work with newer versions of CEMU and Cemuhook.
+As I'm not playing WiiU anymore, I do not intend to update this repository.
+I'd recommend taking a look at https://github.com/hjmmc/WebGyroForCemuhook/releases . It seems to work with the latest verion of the emulator.
+
+## Introduction
+
 First, I should note that this is a *very* quick and dirty solution that I made for my own use. I only created this repository due to the absence of alternatives for the rest of the community. I apologize for the lack of easily configurable files / configuration screens, etc. Anyhow, I believe you'll still find this application very simple to put to work.
 
 This solution enables the use of iPhone's/iPad's and even Android's GYROS in CEMU (with cemuhook) without jailbreak and without installation of any software in the phone. Since HTML5 provides APIs for WebSocket and for gathering GYRO info, it's enough to visit a web page in the phone (hosted in the local network by your computer) to benefit from the phone's GYRO in CEMU.
