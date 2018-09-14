@@ -20,7 +20,7 @@ This is a list with the third-party packages that were used in this project. You
 
 ## Setup instructions
 
-Clone this repository into anyware in your computer (avoid Programs Files due to UAC reasons). Navigate to the folder that contains `app.js` using the Command Prompt (`cd <address>`).
+Clone this repository into anywhere in your computer (avoid Programs Files due to UAC reasons). Navigate to the folder that contains `app.js` using the Command Prompt (`cd <address>`).
 
 Download the required node packages with the following commands (ignore the warnings):
 
